@@ -12,13 +12,18 @@ function createEmployeeRecord(employeeArray) {
 }
 
 function createEmployeeRecords(allEmployeeArrays) {
+   
     return allEmployeeArrays.map(employeeArray => {
+   
         return createEmployeeRecord(employeeArray)
+   
     });
 }
 
-function createTimeInEvent(employee, dateStamp) {
-    employee.timeInEvents.push(createEvent("TimeIn", dateStamp))
+function  createTimeInEvent(employee, dateStam) {
+  
+    employee.timeInEvents.push(createEvent("TimeIn", dateStam))
+  
     return employee
 }
 
