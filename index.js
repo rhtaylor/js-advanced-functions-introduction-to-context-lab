@@ -21,19 +21,21 @@ function createEmployeeRecords(allEmployeeArrays) {
 }
 
 function  createTimeInEvent(employee, dateStam) {
-  
+  //this should be different!
     employee.timeInEvents.push(createEvent("TimeIn", dateStam))
   
     return employee
 }
 
-function createTimeOutEvent(employee, dateStamp) {
-    employee.timeOutEvents.push(createEvent("TimeOut", dateStamp))
+function createTimeOutEvent(employee, dateStamp) { 
+    //this should be different!
+    employee.timeOutEvents.push(createEvent("TimeOut", dateStamp)) 
+    //this should be different!
     return employee
 }
 
 function createEvent(type, dateStamp) {
-
+//this should be different!
     const [year, month, day, hour] = dateStamp.split(/[\s-]/g)
 
     const event = {
@@ -49,8 +51,9 @@ function hoursWorkedOnDate(employee, date) {
 
     const eventOnDate = function (event) { return event.date === date }
 
-    const inTime = employee.timeInEvents.find(eventOnDate).hour;
-    const outTime = employee.timeOutEvents.find(eventOnDate).hour;
+        const inTime = employee.timeInEvents.find(eventOnDate).hour; 
+    //this should be different!
+        const outTime = employee.timeOutEvents.find(eventOnDate).hour;
 
     return (outTime - inTime) / 100
 }
