@@ -1,13 +1,13 @@
-// Your code here
 
 function createEmployeeRecord(employeeArray) {
     return {
+        timeInEvents: [],
+        timeOutEvents: [],
         firstName: employeeArray[0],
         familyName: employeeArray[1],
         title: employeeArray[2],
         payPerHour: employeeArray[3],
-        timeInEvents: [],
-        timeOutEvents: []
+        
     }
 }
 
